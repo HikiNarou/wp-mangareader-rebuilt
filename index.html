@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Seedling - Clone</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Custom Styles -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#6B7280',
+                        accent: '#10B981',
+                        background: {
+                            light: '#F9FAFB',
+                            dark: '#111827'
+                        },
+                        text: {
+                            light: '#1F2937',
+                            dark: '#F9FAFB'
+                        }
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 1;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: #4F46E5;
+        }
+        
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+        }
+        
+        .slide-gradient {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+        }
+    </style>
+</head>
+<body x-data="{ darkMode: false }" :class="{ 'dark': darkMode }" class="transition-colors duration-300">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 shadow-md transition-colors duration-300">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <button class="lg:hidden text-gray-600 dark:text-gray-300 transition-colors duration-300">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <a href="/" class="text-2xl font-bold text-primary transition-colors duration-300">SS</a>
+            </div>
+            
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors duration-300">Home</a>
+                <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors duration-300">Latest</a>
+                <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors duration-300">Popular</a>
+                <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors duration-300">Genres</a>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <button @click="darkMode = !darkMode" 
+                    class="relative inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                    :aria-label="darkMode ? 'Switch to light mode' : 'Switch to dark mode'">
+                    <i class="fas text-lg transition-all duration-300" 
+                        :class="darkMode ? 'fa-sun text-amber-400 rotate-0' : 'fa-moon text-gray-600 dark:text-gray-300 -rotate-90'"></i>
+                </button>
+                <button class="relative inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">
+                    <i class="fas fa-user text-gray-600 dark:text-gray-300"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-16 pb-10">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <!-- Hero Slide 1 -->
+                <div class="swiper-slide relative h-[600px]">
+                    <div class="absolute inset-0 slide-gradient">
+                        <div class="container mx-auto px-4 h-full flex items-center">
+                            <div class="max-w-2xl text-white">
+                                <div class="flex items-center space-x-2 mb-4">
+                                    <span class="bg-primary/90 px-3 py-1 rounded-full text-sm font-medium">Romance</span>
+                                    <span class="bg-secondary/90 px-3 py-1 rounded-full text-sm font-medium">School Life</span>
+                                </div>
+                                <h1 class="text-4xl lg:text-6xl font-bold mb-4 leading-tight">I was treated as a hero all over the country</h1>
+                                <p class="text-lg mb-8 text-gray-200">Transmigrating into a comic as the cannon fodder—Normally entails one holding on to the protagonist's reliable thighs to ensure a smooth life ahead Either the thighs of the male and, or female lead Or the thighs of the antagonist Regardless,</p>
+                                <button class="bg-primary hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 transform hover:scale-105">Read Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg" alt="Hero Image" class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Hero Slide 2 -->
+                <div class="swiper-slide relative h-[600px]">
+                    <div class="absolute inset-0 slide-gradient">
+                        <div class="container mx-auto px-4 h-full flex items-center">
+                            <div class="max-w-2xl text-white">
+                                <div class="flex items-center space-x-2 mb-4">
+                                    <span class="bg-accent/90 px-3 py-1 rounded-full text-sm font-medium">Fantasy</span>
+                                    <span class="bg-secondary/90 px-3 py-1 rounded-full text-sm font-medium">Adventure</span>
+                                </div>
+                                <h1 class="text-4xl lg:text-6xl font-bold mb-4 leading-tight">Dungeon Exploration in My Thirties</h1>
+                                <p class="text-lg mb-8 text-gray-200">Join the adventure of a lifetime as our protagonist discovers that age is just a number when it comes to dungeon exploration.</p>
+                                <button class="bg-accent hover:bg-accent/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 transform hover:scale-105">Start Reading</button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg" alt="Hero Image" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
+        </div>
+    </section>
+
+    <!-- New Series Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">New Series</h2>
+                <a href="#" class="text-primary hover:text-primary/80 font-medium flex items-center gap-2">
+                    View All
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Series Card 1 -->
+                <div class="group card-hover-effect bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/7915357/pexels-photo-7915357.jpeg" alt="Series Image" class="w-full aspect-[3/4] object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-primary hover:bg-primary/90 px-4 py-2.5 rounded-lg text-white text-sm font-semibold transform hover:translate-y-[-2px] transition-all duration-300">Read Now</button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-primary/90 text-white px-3 py-1 rounded-full text-xs font-medium">NEW</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">A Rank-Explorer and Streamer – I Was Just...</h3>
+                        <div class="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+                            <div class="flex items-center justify-between">
+                                <span class="line-clamp-1">Chapter 8 - Kur...</span>
+                                <span class="text-xs">12 hours ago</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="line-clamp-1">Chapter 7 - Irregul...</span>
+                                <span class="text-xs">1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Series Card 2 -->
+                <div class="group card-hover-effect bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/5490778/pexels-photo-5490778.jpeg" alt="Series Image" class="w-full aspect-[3/4] object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-primary hover:bg-primary/90 px-4 py-2.5 rounded-lg text-white text-sm font-semibold transform hover:translate-y-[-2px] transition-all duration-300">Read Now</button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-accent/90 text-white px-3 py-1 rounded-full text-xs font-medium">HOT</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">Dungeon Exploration in My Thirties – Not Aimin...</h3>
+                        <div class="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+                            <div class="flex items-center justify-between">
+                                <span class="line-clamp-1">Chapter 19 - Gra...</span>
+                                <span class="text-xs">9 hours ago</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="line-clamp-1">Chapter 18 - Pure...</span>
+                                <span class="text-xs">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Series Card 3 -->
+                <div class="group card-hover-effect bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/6976943/pexels-photo-6976943.jpeg" alt="Series Image" class="w-full aspect-[3/4] object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-primary hover:bg-primary/90 px-4 py-2.5 rounded-lg text-white text-sm font-semibold transform hover:translate-y-[-2px] transition-all duration-300">Read Now</button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-secondary/90 text-white px-3 py-1 rounded-full text-xs font-medium">TRENDING</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">The Reincarnator Who Obtained the "Thread of Fate"</h3>
+                        <div class="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+                            <div class="flex items-center justify-between">
+                                <span class="line-clamp-1">Chapter 150 - The Path</span>
+                                <span class="text-xs">13 hours ago</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="line-clamp-1">Chapter 149 - An Unexpected...</span>
+                                <span class="text-xs">5 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Series Card 4 -->
+                <div class="group card-hover-effect bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/5490276/pexels-photo-5490276.jpeg" alt="Series Image" class="w-full aspect-[3/4] object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-primary hover:bg-primary/90 px-4 py-2.5 rounded-lg text-white text-sm font-semibold transform hover:translate-y-[-2px] transition-all duration-300">Read Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">When I Reincarnated as the Main Character</h3>
+                        <div class="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+                            <div class="flex items-center justify-between">
+                                <span class="line-clamp-1">Chapter 55.6 - The Beginning</span>
+                                <span class="text-xs">13 hours ago</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="line-clamp-1">Chapter 55.5 - Secrets</span>
+                                <span class="text-xs">5 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Updates Section -->
+    <section class="py-16 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">Latest Updates</h2>
+                    <p class="text-gray-600 dark:text-gray-400">Stay up to date with the newest chapters</p>
+                </div>
+                <a href="#" class="text-primary hover:text-primary/80 font-medium flex items-center gap-2 group">
+                    View All Updates
+                    <i class="fas fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+                <!-- Update Card 1 -->
+                <div class="group card-hover-effect bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/7915357/pexels-photo-7915357.jpeg" alt="Update Image" class="w-full aspect-[3/4] object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-primary hover:bg-primary/90 px-4 py-2.5 rounded-lg text-white text-sm font-semibold transform hover:translate-y-[-2px] transition-all duration-300 flex items-center justify-center gap-2">
+                                    <span>Continue Reading</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">NEW CHAPTER</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-4 mb-3">
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
+                                <i class="far fa-clock"></i>
+                                1 day ago
+                            </span>
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
+                                <i class="far fa-eye"></i>
+                                2.5K reads
+                            </span>
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
+                                <i class="far fa-comment"></i>
+                                128
+                            </span>
+                        </div>
+                        <h3 class="font-semibold text-lg mb-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">Vol. 3 Chapter 119.1 - The Awakening</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed">The story continues as our protagonist discovers new powers and faces unprecedented challenges in their journey...</p>
+                        <div class="flex items-center gap-2 mt-4">
+                            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">Fantasy</span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">Action</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Update Card 2 -->
+                <div class="group card-hover-effect bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/5490778/pexels-photo-5490778.jpeg" alt="Update Image" class="w-full aspect-[3/4] object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-primary hover:bg-primary/90 px-4 py-2.5 rounded-lg text-white text-sm font-semibold transform hover:translate-y-[-2px] transition-all duration-300">Continue Reading</button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-accent/90 text-white px-3 py-1 rounded-full text-xs font-medium">POPULAR</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                                <i class="far fa-clock mr-1"></i>
+                                9 hours ago
+                            </span>
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                                <i class="far fa-eye mr-1"></i>
+                                3.8K reads
+                            </span>
+                        </div>
+                        <h3 class="font-semibold text-lg mb-1 line-clamp-2 group-hover:text-primary transition-colors duration-300">Chapter 334 - When Darkness Falls</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">As night descends upon the kingdom, ancient prophecies begin to unfold...</p>
+                    </div>
+                </div>
+
+                <!-- Update Card 3 -->
+                <div class="group card-hover-effect bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/6976943/pexels-photo-6976943.jpeg" alt="Update Image" class="w-full aspect-[3/4] object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-primary hover:bg-primary/90 px-4 py-2.5 rounded-lg text-white text-sm font-semibold transform hover:translate-y-[-2px] transition-all duration-300">Continue Reading</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                                <i class="far fa-clock mr-1"></i>
+                                13 hours ago
+                            </span>
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                                <i class="far fa-eye mr-1"></i>
+                                1.2K reads
+                            </span>
+                        </div>
+                        <h3 class="font-semibold text-lg mb-1 line-clamp-2 group-hover:text-primary transition-colors duration-300">Chapter 55.6 - The Beginning of the End</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">Everything changes as the final battle approaches. Will our heroes prevail?</p>
+                    </div>
+                </div>
+
+                <!-- Update Card 4 -->
+                <div class="group card-hover-effect bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/5490276/pexels-photo-5490276.jpeg" alt="Update Image" class="w-full aspect-[3/4] object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-primary hover:bg-primary/90 px-4 py-2.5 rounded-lg text-white text-sm font-semibold transform hover:translate-y-[-2px] transition-all duration-300">Continue Reading</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                                <i class="far fa-clock mr-1"></i>
+                                15 hours ago
+                            </span>
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                                <i class="far fa-eye mr-1"></i>
+                                956 reads
+                            </span>
+                        </div>
+                        <h3 class="font-semibold text-lg mb-1 line-clamp-2 group-hover:text-primary transition-colors duration-300">Chapter 45 - Secrets of the Ancient Scroll</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">Hidden within the dusty pages lies a truth that could change everything...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-gray-950 text-white py-16">
+        <div class="container mx-auto px-4">
+            <!-- Top Footer -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Brand Section -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="text-2xl font-bold bg-primary text-white px-2 py-1 rounded">SS</span>
+                        <h3 class="text-xl font-bold">Story Seedling</h3>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">Your premier destination for the latest and most engaging web novels and light novels. Discover new worlds, one chapter at a time.</p>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+                                <i class="fas fa-chevron-right text-xs"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+                                <i class="fas fa-chevron-right text-xs"></i>
+                                <span>Latest Updates</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+                                <i class="fas fa-chevron-right text-xs"></i>
+                                <span>Popular Series</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+                                <i class="fas fa-chevron-right text-xs"></i>
+                                <span>Browse Genres</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Support</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+                                <i class="fas fa-chevron-right text-xs"></i>
+                                <span>Help Center</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+                                <i class="fas fa-chevron-right text-xs"></i>
+                                <span>Privacy Policy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+                                <i class="fas fa-chevron-right text-xs"></i>
+                                <span>Terms of Service</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+                                <i class="fas fa-chevron-right text-xs"></i>
+                                <span>DMCA</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Stay Updated</h4>
+                    <p class="text-gray-400">Subscribe to our newsletter for the latest updates and exclusive content.</p>
+                    <form class="space-y-3">
+                        <div class="relative">
+                            <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 bg-gray-800 dark:bg-gray-900 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary">
+                            <button type="submit" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary hover:bg-primary/90 text-white px-4 py-1.5 rounded-md transition-colors duration-300">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400">&copy; 2024 Story Seedling. All rights reserved.</p>
+                    <div class="flex items-center gap-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Contact</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">About Us</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Advertise</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const heroSwiper = new Swiper('.hero-swiper', {
+            loop: true,
+            effect: 'fade',
+            speed: 1000,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Dark mode toggle with smooth transition
+        document.addEventListener('alpine:init', () => {
+            Alpine.store('darkMode', {
+                on: false,
+                toggle() {
+                    this.on = !this.on;
+                    document.documentElement.classList.toggle('dark');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
