@@ -1,0 +1,30 @@
+Manga Reader Theme, Copyright 2022 Sky Ha Manga Starter is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+Manga Starter bundles the following third-party resources:
+
+HTML5 Shiv v3.7.3, Copyright 2014 Alexander Farkas Licenses: MIT/GPL2 Source: https://github.com/aFarkas/html5shiv
+
+UIkit v2.27.4, Copyright 2013-2017 YOOtheme GmbH License: MIT Source: https://github.com/uikit/uikit
+
+jQuery Preload, Copyright 2014-2016 Ariel Flesler License: MIT Source: https://github.com/flesler/jquery.preload
+
+Font Awesome icons, Copyright Dave Gandy License: SIL Open Font License, version 1.1.
+Source: https://github.com/FortAwesome/Font-Awesome
+
+Special thanks to the WordPress team for their awesome Twenty Seventeen theme, hopefully someone will take
+my theme and make something cool with it, have fun, and share what they've learned with others like i did.
+
+A NOTE ABOUT LICENSE:
+
+While this theme is freely available and open-source under the GPL2 license, that does not mean it is "public domain." 
+You are free to modify and redistribute as long as you comply with the license. Any derivative work MUST be GPL licensed 
+and available as open source. You also MUST give proper attribution to the original author, copyright holder, and trademark
+owner. This means you cannot change two lines of code and claim copyright of the entire work as your own. 
+The GPL2 license requires that if you modify this code, you must clearly indicate what section(s) you have modified 
+and you may only claim copyright of your modifications and not the body of work.

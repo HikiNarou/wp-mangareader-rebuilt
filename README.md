@@ -1,2 +1,1 @@
-# blackboxai-1743147037017
-Built by https://www.blackbox.ai
+Starter Theme for a Manga Reader with WordPress
