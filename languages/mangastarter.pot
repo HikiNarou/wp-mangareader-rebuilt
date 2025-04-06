@@ -1,0 +1,773 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: MangaStarter\n"
+"POT-Creation-Date: 2018-01-23 01:28-0400\n"
+"PO-Revision-Date: 2018-01-23 01:27-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:18
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:36
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:55
+msgid "Reply"
+msgstr ""
+
+#: comments.php:61
+msgid "Previous"
+msgstr ""
+
+#: comments.php:62
+msgid "Next"
+msgstr ""
+
+#: comments.php:70
+msgid "Comments are closed."
+msgstr ""
+
+#: components/loop/content-archive.php:25
+#, php-format
+msgid "%s Comments"
+msgstr ""
+
+#: components/loop/content-carousel.php:17 inc/customizer.php:40
+msgid "Latest Mangas"
+msgstr ""
+
+#: components/loop/content-pagination.php:13
+msgid "Newer Releases"
+msgstr ""
+
+#: components/loop/content-pagination.php:14
+msgid "Older Releases"
+msgstr ""
+
+#: components/loop/content-pagination.php:23
+msgid "Previous Page"
+msgstr ""
+
+#: components/loop/content-pagination.php:24
+msgid "Next Page"
+msgstr ""
+
+#: components/navigation/navigation-top.php:6
+msgid "Top Menu"
+msgstr ""
+
+#: components/navigation/navigation-top.php:10
+msgid "Menu"
+msgstr ""
+
+#: components/page/content-page.php:14
+msgid "Pages:"
+msgstr ""
+
+#: components/page/content-search.php:14 components/page/content-search.php:18
+msgid "Search"
+msgstr ""
+
+#: components/post/content-chapters.php:80
+msgid "Tips"
+msgstr ""
+
+#: components/post/content-chapters.php:81
+#, php-format
+msgid ""
+"You are reading %1$s, please read %1$s scan online from right to left. You "
+"can use left (←) and right (→) keyboard keys or click on the %1$s image to "
+"browse between %1$s pages."
+msgstr ""
+
+#: components/post/content-chapters.php:129
+msgid "This is the last page."
+msgstr ""
+
+#: components/post/content-chapters.php:147
+msgid "This is the first page."
+msgstr ""
+
+#: components/post/content-chapters.php:165 inc/chapters.php:155
+#: inc/chapters.php:160
+msgid "Page"
+msgstr ""
+
+#: components/post/content-mangas.php:27
+msgid "Alternative Titles"
+msgstr ""
+
+#: components/post/content-mangas.php:32
+msgid "Release Year"
+msgstr ""
+
+#: components/post/content-mangas.php:40
+msgid "Author(s)"
+msgstr ""
+
+#: components/post/content-mangas.php:46
+msgid "Artist(s)"
+msgstr ""
+
+#: components/post/content-mangas.php:52 inc/tgm_plugin_activation.php:2622
+msgid "Status"
+msgstr ""
+
+#: components/post/content-mangas.php:60
+msgid "Genres"
+msgstr ""
+
+#: components/post/content-mangas.php:66
+msgid "Description"
+msgstr ""
+
+#: components/post/content-mangas.php:79
+msgid ""
+"The following content is intended for mature audiences and may contain "
+"sexual themes, gore, violence and/or strong language. Discretion is advised."
+msgstr ""
+
+#: components/post/content-mangas.php:88
+msgid "Chapters"
+msgstr ""
+
+#: components/post/content-mangas.php:98
+msgid "Share on Facebook"
+msgstr ""
+
+#: components/post/content-mangas.php:101
+msgid "Share on Google+"
+msgstr ""
+
+#: components/post/content-mangas.php:104
+msgid "Share on Twitter"
+msgstr ""
+
+#: components/post/content-mangas.php:107
+msgid "RSS Feed"
+msgstr ""
+
+#: components/post/content-none.php:11
+msgid "Nothing Found..."
+msgstr ""
+
+#: components/post/content-none.php:17
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: components/post/content-none.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: footer.php:36
+msgid "Proudly Powered By"
+msgstr ""
+
+#: front-page.php:16 index.php:27
+msgid "Latest Chapters"
+msgstr ""
+
+#: functions.php:49
+msgid "Top"
+msgstr ""
+
+#: functions.php:144
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:146
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: functions.php:153
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:155 functions.php:164 functions.php:173
+msgid "Add widgets here to appear in your footer."
+msgstr ""
+
+#: functions.php:162
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:171
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:201
+msgid "Home"
+msgstr ""
+
+#: functions.php:202
+msgid "Homepage"
+msgstr ""
+
+#: inc/back-compat.php:31 inc/back-compat.php:41 inc/back-compat.php:54
+#, php-format
+msgid ""
+"Manga Starter requires at least WordPress version 4.7. You are running "
+"version %s. Please upgrade and try again."
+msgstr ""
+
+#: inc/chapters.php:78
+msgid "There are no chapters available."
+msgstr ""
+
+#: inc/chapters.php:104
+msgid "Chapter List"
+msgstr ""
+
+#: inc/chapters.php:105
+msgid "Return to"
+msgstr ""
+
+#: inc/chapters.php:172
+msgid "Ex: One Punch Man 001"
+msgstr ""
+
+#: inc/customizer.php:42 inc/customizer.php:53 inc/customizer.php:64
+msgid "Show"
+msgstr ""
+
+#: inc/customizer.php:43 inc/customizer.php:54 inc/customizer.php:65
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer.php:51
+msgid "Scroll Up Button"
+msgstr ""
+
+#: inc/customizer.php:62
+msgid "Proudly Powered by WordPress"
+msgstr ""
+
+#: inc/customizer.php:75
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:76
+msgid "Configure your theme settings"
+msgstr ""
+
+#: inc/customizer.php:80
+msgid "Front Carousel"
+msgstr ""
+
+#: inc/customizer.php:85
+msgid "Footer"
+msgstr ""
+
+#: inc/required_plugins.php:49 inc/tgm_plugin_activation.php:317
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/required_plugins.php:50 inc/tgm_plugin_activation.php:318
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/required_plugins.php:51 inc/tgm_plugin_activation.php:320
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/required_plugins.php:52 inc/tgm_plugin_activation.php:322
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/required_plugins.php:53 inc/tgm_plugin_activation.php:323
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: inc/required_plugins.php:55 inc/tgm_plugin_activation.php:326
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/required_plugins.php:60 inc/tgm_plugin_activation.php:332
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/required_plugins.php:65 inc/tgm_plugin_activation.php:338
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/required_plugins.php:70 inc/tgm_plugin_activation.php:344
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/required_plugins.php:75 inc/tgm_plugin_activation.php:350
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/required_plugins.php:80 inc/tgm_plugin_activation.php:356
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required_plugins.php:85 inc/tgm_plugin_activation.php:361
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required_plugins.php:90 inc/tgm_plugin_activation.php:366
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required_plugins.php:95 inc/tgm_plugin_activation.php:371
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required_plugins.php:99 inc/tgm_plugin_activation.php:375
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/required_plugins.php:100 inc/tgm_plugin_activation.php:377
+#: inc/tgm_plugin_activation.php:3227
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/required_plugins.php:101 inc/tgm_plugin_activation.php:378
+#: inc/tgm_plugin_activation.php:3020
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: inc/required_plugins.php:102 inc/tgm_plugin_activation.php:380
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/required_plugins.php:103 inc/tgm_plugin_activation.php:382
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: inc/required_plugins.php:104 inc/tgm_plugin_activation.php:384
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/required_plugins.php:105 inc/tgm_plugin_activation.php:385
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/required_plugins.php:106 inc/tgm_plugin_activation.php:386
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/required_plugins.php:107 inc/tgm_plugin_activation.php:387
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:376 inc/tgm_plugin_activation.php:895
+#: inc/tgm_plugin_activation.php:2601 inc/tgm_plugin_activation.php:3648
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:590
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:591
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:1002
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:1002 inc/tgm_plugin_activation.php:1005
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:1005
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:1189 inc/tgm_plugin_activation.php:3016
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/tgm_plugin_activation.php:2050
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2341
+msgid "Required"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2344
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2360
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2363
+msgid "External Source"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2366
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2383
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2387
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2389
+msgid "Active"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2395
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2398
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2401
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: inc/tgm_plugin_activation.php:2410
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm_plugin_activation.php:2456
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm_plugin_activation.php:2460
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm_plugin_activation.php:2464
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm_plugin_activation.php:2468
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm_plugin_activation.php:2550
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2558
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2566
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2578
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2601
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2615
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2616
+msgid "Source"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2617
+msgid "Type"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2621
+msgid "Version"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm_plugin_activation.php:2671
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm_plugin_activation.php:2676
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm_plugin_activation.php:2682
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2752
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2785
+msgid "Install"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2791
+msgid "Update"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2794
+msgid "Activate"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2825
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2827
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2868
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2870
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:2976
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:3002
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:3226
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm_plugin_activation.php:3566
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/tgm_plugin_activation.php:3569
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm_plugin_activation.php:3571
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:3575
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm_plugin_activation.php:3577
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:3577 inc/tgm_plugin_activation.php:3585
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:3577 inc/tgm_plugin_activation.php:3585
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:3578
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm_plugin_activation.php:3580
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:3583
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm_plugin_activation.php:3585
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgm_plugin_activation.php:3586
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm_plugin_activation.php:3588
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: search.php:14
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search..."
+msgstr ""
+
+#: single.php:23
+msgid "Previous Manga"
+msgstr ""
+
+#: single.php:24
+msgid "Next Manga"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "MangaStarter"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://salamandr.space/mangastarter"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Manga Starter Theme for online manga reading."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Angel Castillo"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://salamandr.space/"
+msgstr ""
